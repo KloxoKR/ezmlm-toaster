@@ -199,7 +199,7 @@ cp $RPM_BUILD_DIR/ezmlm-%{ezmlmversion}/ezmlm-cgi %{buildroot}/%{basedir}/cgi-bi
 cp $RPM_BUILD_DIR/ezmlm-%{ezmlmversion}/ezcgirc %{buildroot}/%{_sysconfdir}/ezmlm/ezcgirc
 cp $RPM_BUILD_DIR/ezmlm-%{ezmlmversion}/ezcgirc %{buildroot}/%{_sysconfdir}/ezmlm/ezcgirc.dist
 
-tar fvxj $RPM_SOURCE_DIR/ezman-%{idxversion}.html.tar.bz2
+tar fvxj %{buildroot}/ezman-%{idxversion}.html.tar.bz2
 
 
 #-------------------------------------------------------------------------------
@@ -253,7 +253,7 @@ tar fvxj $RPM_SOURCE_DIR/ezman-%{idxversion}.html.tar.bz2
 #-------------------------------------------------------------------------------
 %changelog
 #-------------------------------------------------------------------------------
-* Mon Jan 27 2019 Dionysis Kladis <dkstiler@gmail.com> 0.53.324-1.3.9.kng
+* Sun Jan 27 2019 Dionysis Kladis <dkstiler@gmail.com> 0.53.324-1.3.9.kng
 - Fixing compile issues and spec file for cenntos 8
 - Added missing depedency libnsl for centos 8
 - Fix a clean up issue folders with reduntanty sections that breaks on centos 8 
@@ -280,7 +280,7 @@ tar fvxj $RPM_SOURCE_DIR/ezman-%{idxversion}.html.tar.bz2
 - Added Suse 11.1 support
 * Mon Feb 09 2009 Jake Vickers <jake@qmailtoaster.com> 0.53.324-1.3.4
 - Added Fedora 9 and 10 support
-* Sat Apr 17 2007 Nick Hemmesch <nick@ndhsoft.com> 0.53.324-1.3.3
+* Tue Apr 17 2007 Nick Hemmesch <nick@ndhsoft.com> 0.53.324-1.3.3
 - Add CentOS 5 i386 support
 - Add CentOS 5 x86_64 support
 * Wed Nov 01 2006 Erik A. Espinoza <espinoza@forcenetworks.com> 0.53.324-1.3.2
@@ -321,7 +321,7 @@ tar fvxj $RPM_SOURCE_DIR/ezman-%{idxversion}.html.tar.bz2
 - Detect gcc-3.2.3
 * Mon Mar 31 2003 Miguel Beccari <miguel.beccari@clikka.com> 0.53.324-1.0.5
 - Conectiva Linux 7.0 support
-* Sun Feb 15 2003 Nick Hemmesch <nick@ndhsoft.com> 0.53.324-1.0.4
+* Sat Feb 15 2003 Nick Hemmesch <nick@ndhsoft.com> 0.53.324-1.0.4
 - Support for Red Hat 8.0
 * Wed Feb 05 2003 Miguel Beccari <miguel.beccari@clikka.com> 0.53.324-1.0.3
 - Support for Red Hat 8.0 thanks to Andrew.J.Kay
@@ -356,7 +356,7 @@ tar fvxj $RPM_SOURCE_DIR/ezman-%{idxversion}.html.tar.bz2
 - Installation directly depends on apache-conf-toaster (that provides httpd
   configurations for all web packages)
 - Better macros to detect Mandrake Release
-* Thu Aug 13 2002 Miguel Beccari <miguel.beccari@clikka.com> 0.6.0.53.324-1
+* Tue Aug 13 2002 Miguel Beccari <miguel.beccari@clikka.com> 0.6.0.53.324-1
 - New version: 0.6 toaster
 - We have ezmlm.cgi (it was missed in previous packages)
 - Configuration files are in /etc/ezmlm (no more in /etc)
@@ -364,11 +364,11 @@ tar fvxj $RPM_SOURCE_DIR/ezman-%{idxversion}.html.tar.bz2
 - New version: 0.5 toaster
 - Doc package is standalone (someone does not ask for man pages)
 - Checks for gcc-3.2 (default compiler from now)
-* Tue Aug 08 2002 Miguel Beccari <miguel.beccari@clikka.com> 0.4.0.53.324-1
+* Thu Aug 08 2002 Miguel Beccari <miguel.beccari@clikka.com> 0.4.0.53.324-1
 - Rebuild against 0.4 toaster
-* Thu Aug 06 2002 Miguel Beccari <miguel.beccari@clikka.com> 0.3.0.53.324-3
+* Tue Aug 06 2002 Miguel Beccari <miguel.beccari@clikka.com> 0.3.0.53.324-3
 - Better dependencies for RedHat
-* Thu Jul 30 2002 Miguel Beccari <miguel.beccari@clikka.com> 0.3.0.53.324-2
+* Tue Jul 30 2002 Miguel Beccari <miguel.beccari@clikka.com> 0.3.0.53.324-2
 - Now packages have got 'no sex': you can rebuild them with command line
   flags for specifics targets that are: RedHat, Trustix, and of course
   Mandrake (that is default)
