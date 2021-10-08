@@ -199,7 +199,7 @@ cp $RPM_BUILD_DIR/ezmlm-%{ezmlmversion}/ezmlm-cgi %{buildroot}/%{basedir}/cgi-bi
 cp $RPM_BUILD_DIR/ezmlm-%{ezmlmversion}/ezcgirc %{buildroot}/%{_sysconfdir}/ezmlm/ezcgirc
 cp $RPM_BUILD_DIR/ezmlm-%{ezmlmversion}/ezcgirc %{buildroot}/%{_sysconfdir}/ezmlm/ezcgirc.dist
 
-tar fvxj %{buildroot}/ezman-%{idxversion}.html.tar.bz2
+tar fvxj %{Source2}
 
 
 #-------------------------------------------------------------------------------
