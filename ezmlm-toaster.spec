@@ -3,7 +3,7 @@
 %define	ezmlmversion 0.53
 %define 	pversion %{ezmlmversion}.324
 %define 	bversion 1.3
-%define	rpmrelease 9.kng%{?dist}
+%define	rpmrelease 9.kkr%{?dist}
 
 %define         release %{bversion}.%{rpmrelease}
 %define         apacheuser apache
